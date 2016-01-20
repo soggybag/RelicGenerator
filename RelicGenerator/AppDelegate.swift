@@ -13,10 +13,22 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    
+    func styles() {
+        UINavigationBar.appearance().tintColor = UIColor.orangeColor()
+        UINavigationBar.appearance().barTintColor = UIColor.darkGrayColor()
+    }
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)
+        print(paths[0])
+        
+        styles()
+        
         return true
     }
 

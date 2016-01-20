@@ -1,4 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Automatic">
+    <entity name="Relic" representedClassName=".Relic" syncable="YES">
+        <attribute name="casterBonusManaged" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="casterLevelManaged" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="costManaged" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" attributeType="String" defaultValueString="RelicName" syncable="YES"/>
+        <attribute name="objectDescription" attributeType="String" defaultValueString="RelicObjectDescription" syncable="YES"/>
+        <relationship name="spellEffect" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Spell" syncable="YES"/>
+    </entity>
+    <entity name="Scroll" representedClassName=".Scroll" syncable="YES">
+        <relationship name="scrollSpell" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ScrollSpell" inverseName="scroll" inverseEntity="ScrollSpell" syncable="YES"/>
+    </entity>
+    <entity name="ScrollSpell" representedClassName=".ScrollSpell" syncable="YES">
+        <attribute name="casterBonusManaged" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="casterLevelManaged" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="costManaged" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="scroll" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Scroll" inverseName="scrollSpell" inverseEntity="Scroll" syncable="YES"/>
+        <relationship name="spellEffect" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Spell" syncable="YES"/>
+    </entity>
+    <entity name="Spell" representedClassName=".Spell" syncable="YES">
+        <attribute name="castAtHigherLevel" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasAttack" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasDC" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="levelManaged" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" attributeType="String" defaultValueString="SpellName" syncable="YES"/>
+        <attribute name="pagePHBManaged" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Relic" positionX="-468" positionY="-63" width="128" height="135"/>
+        <element name="ScrollSpell" positionX="-306" positionY="105" width="128" height="118"/>
+        <element name="Spell" positionX="-117" positionY="-9" width="128" height="135"/>
+        <element name="Scroll" positionX="-477" positionY="120" width="128" height="58"/>
+    </elements>
 </model>

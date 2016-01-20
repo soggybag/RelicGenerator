@@ -7,12 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B2B4E461C4B12100051554B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2B4E451C4B12100051554B /* TabBarController.swift */; };
+		7B2B4E741C4B7A520051554B /* ScrollSpell+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2B4E701C4B7A520051554B /* ScrollSpell+CoreDataProperties.swift */; };
+		7B2B4E751C4B7A520051554B /* ScrollSpell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2B4E711C4B7A520051554B /* ScrollSpell.swift */; };
+		7B2B4E761C4B7A520051554B /* Scroll+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2B4E721C4B7A520051554B /* Scroll+CoreDataProperties.swift */; };
+		7B2B4E771C4B7A520051554B /* Scroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2B4E731C4B7A520051554B /* Scroll.swift */; };
+		7B2B4E791C4C16490051554B /* ListScrollsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2B4E781C4C16490051554B /* ListScrollsViewController.swift */; };
+		7B2B4E7D1C4C7E3B0051554B /* ScrollObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2B4E7C1C4C7E3B0051554B /* ScrollObject.swift */; };
+		7B825BCF1C2D228900BFBF6E /* SpellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B825BCE1C2D228900BFBF6E /* SpellManager.swift */; };
+		7B825BDA1C2D25EE00BFBF6E /* spells.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B825BD91C2D25EE00BFBF6E /* spells.plist */; };
+		7B825BDC1C2D26B700BFBF6E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B825BDB1C2D26B700BFBF6E /* Extensions.swift */; };
+		7B825BDE1C2DAC7700BFBF6E /* ObjectGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B825BDD1C2DAC7700BFBF6E /* ObjectGenerator.swift */; };
+		7B825BEC1C2DAE8E00BFBF6E /* RelicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B825BEB1C2DAE8E00BFBF6E /* RelicManager.swift */; };
+		7B825BF61C2DC1ED00BFBF6E /* ListRelicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B825BF51C2DC1ED00BFBF6E /* ListRelicsViewController.swift */; };
+		7B825C0D1C30590B00BFBF6E /* Spell+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B825C091C30590B00BFBF6E /* Spell+CoreDataProperties.swift */; };
+		7B825C0E1C30590B00BFBF6E /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B825C0A1C30590B00BFBF6E /* Spell.swift */; };
+		7B825C0F1C30590B00BFBF6E /* Relic+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B825C0B1C30590B00BFBF6E /* Relic+CoreDataProperties.swift */; };
+		7B825C101C30590B00BFBF6E /* Relic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B825C0C1C30590B00BFBF6E /* Relic.swift */; };
+		7B825C181C34A15300BFBF6E /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B825C111C34A15300BFBF6E /* Icon-40@2x.png */; };
+		7B825C191C34A15300BFBF6E /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B825C121C34A15300BFBF6E /* Icon-40@3x.png */; };
+		7B825C1A1C34A15300BFBF6E /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B825C131C34A15300BFBF6E /* Icon-60@2x.png */; };
+		7B825C1B1C34A15300BFBF6E /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B825C141C34A15300BFBF6E /* Icon-60@3x.png */; };
+		7B825C1C1C34A15300BFBF6E /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B825C151C34A15300BFBF6E /* Icon-Small@2x.png */; };
+		7B825C1D1C34A15300BFBF6E /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B825C161C34A15300BFBF6E /* Icon-Small@3x.png */; };
+		7B825C1E1C34A15300BFBF6E /* Icons.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B825C171C34A15300BFBF6E /* Icons.png */; };
+		7B825C211C34A1B500BFBF6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B825C201C34A1B500BFBF6E /* LaunchScreen.storyboard */; };
+		7B825C231C34BBB300BFBF6E /* RelicStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B825C221C34BBB300BFBF6E /* RelicStyleKit.swift */; };
+		7B825C251C34C0E400BFBF6E /* RelicIconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B825C241C34C0E400BFBF6E /* RelicIconManager.swift */; };
+		7B825C271C34D66000BFBF6E /* ScrollManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B825C261C34D66000BFBF6E /* ScrollManager.swift */; };
+		7B825C291C3905AB00BFBF6E /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B825C281C3905AB00BFBF6E /* ScrollViewController.swift */; };
 		7BB2EA301C2473FA009BFDDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB2EA2F1C2473FA009BFDDA /* AppDelegate.swift */; };
 		7BB2EA321C2473FA009BFDDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB2EA311C2473FA009BFDDA /* ViewController.swift */; };
 		7BB2EA351C2473FA009BFDDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB2EA331C2473FA009BFDDA /* Main.storyboard */; };
 		7BB2EA381C2473FA009BFDDA /* RelicGenerator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7BB2EA361C2473FA009BFDDA /* RelicGenerator.xcdatamodeld */; };
 		7BB2EA3A1C2473FA009BFDDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BB2EA391C2473FA009BFDDA /* Assets.xcassets */; };
-		7BB2EA3D1C2473FA009BFDDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB2EA3B1C2473FA009BFDDA /* LaunchScreen.storyboard */; };
 		7BB2EA481C2473FB009BFDDA /* RelicGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB2EA471C2473FB009BFDDA /* RelicGeneratorTests.swift */; };
 		7BB2EA531C2473FB009BFDDA /* RelicGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB2EA521C2473FB009BFDDA /* RelicGeneratorUITests.swift */; };
 /* End PBXBuildFile section */
@@ -35,13 +63,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B2B4E451C4B12100051554B /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		7B2B4E701C4B7A520051554B /* ScrollSpell+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScrollSpell+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7B2B4E711C4B7A520051554B /* ScrollSpell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollSpell.swift; sourceTree = "<group>"; };
+		7B2B4E721C4B7A520051554B /* Scroll+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Scroll+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7B2B4E731C4B7A520051554B /* Scroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scroll.swift; sourceTree = "<group>"; };
+		7B2B4E781C4C16490051554B /* ListScrollsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListScrollsViewController.swift; sourceTree = "<group>"; };
+		7B2B4E7C1C4C7E3B0051554B /* ScrollObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollObject.swift; sourceTree = "<group>"; };
+		7B825BCE1C2D228900BFBF6E /* SpellManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpellManager.swift; path = ../SpellManager.swift; sourceTree = "<group>"; };
+		7B825BD91C2D25EE00BFBF6E /* spells.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = spells.plist; path = RelicGenerator/spells.plist; sourceTree = "<group>"; };
+		7B825BDB1C2D26B700BFBF6E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7B825BDD1C2DAC7700BFBF6E /* ObjectGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectGenerator.swift; sourceTree = "<group>"; };
+		7B825BEB1C2DAE8E00BFBF6E /* RelicManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelicManager.swift; sourceTree = "<group>"; };
+		7B825BF51C2DC1ED00BFBF6E /* ListRelicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRelicsViewController.swift; sourceTree = "<group>"; };
+		7B825C091C30590B00BFBF6E /* Spell+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Spell+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7B825C0A1C30590B00BFBF6E /* Spell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
+		7B825C0B1C30590B00BFBF6E /* Relic+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Relic+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7B825C0C1C30590B00BFBF6E /* Relic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Relic.swift; sourceTree = "<group>"; };
+		7B825C111C34A15300BFBF6E /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		7B825C121C34A15300BFBF6E /* Icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@3x.png"; sourceTree = "<group>"; };
+		7B825C131C34A15300BFBF6E /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		7B825C141C34A15300BFBF6E /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		7B825C151C34A15300BFBF6E /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		7B825C161C34A15300BFBF6E /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@3x.png"; sourceTree = "<group>"; };
+		7B825C171C34A15300BFBF6E /* Icons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icons.png; sourceTree = "<group>"; };
+		7B825C201C34A1B500BFBF6E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B825C221C34BBB300BFBF6E /* RelicStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RelicStyleKit.swift; path = ../RelicStyleKit.swift; sourceTree = "<group>"; };
+		7B825C241C34C0E400BFBF6E /* RelicIconManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelicIconManager.swift; sourceTree = "<group>"; };
+		7B825C261C34D66000BFBF6E /* ScrollManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollManager.swift; sourceTree = "<group>"; };
+		7B825C281C3905AB00BFBF6E /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		7BB2EA2C1C2473FA009BFDDA /* RelicGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RelicGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB2EA2F1C2473FA009BFDDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BB2EA311C2473FA009BFDDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7BB2EA341C2473FA009BFDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BB2EA371C2473FA009BFDDA /* RelicGenerator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RelicGenerator.xcdatamodel; sourceTree = "<group>"; };
 		7BB2EA391C2473FA009BFDDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7BB2EA3C1C2473FA009BFDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BB2EA3E1C2473FA009BFDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BB2EA431C2473FB009BFDDA /* RelicGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RelicGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB2EA471C2473FB009BFDDA /* RelicGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelicGeneratorTests.swift; sourceTree = "<group>"; };
@@ -76,13 +132,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B825BD41C2D233600BFBF6E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				7B825C091C30590B00BFBF6E /* Spell+CoreDataProperties.swift */,
+				7B825C0A1C30590B00BFBF6E /* Spell.swift */,
+				7B825C0B1C30590B00BFBF6E /* Relic+CoreDataProperties.swift */,
+				7B825C0C1C30590B00BFBF6E /* Relic.swift */,
+				7B2B4E701C4B7A520051554B /* ScrollSpell+CoreDataProperties.swift */,
+				7B2B4E711C4B7A520051554B /* ScrollSpell.swift */,
+				7B2B4E721C4B7A520051554B /* Scroll+CoreDataProperties.swift */,
+				7B2B4E731C4B7A520051554B /* Scroll.swift */,
+				7BB2EA361C2473FA009BFDDA /* RelicGenerator.xcdatamodeld */,
+				7B825BD91C2D25EE00BFBF6E /* spells.plist */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		7B825BF71C2DC23300BFBF6E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7BB2EA311C2473FA009BFDDA /* ViewController.swift */,
+				7B825BF51C2DC1ED00BFBF6E /* ListRelicsViewController.swift */,
+				7B825C281C3905AB00BFBF6E /* ScrollViewController.swift */,
+				7B2B4E781C4C16490051554B /* ListScrollsViewController.swift */,
+			);
+			name = "View Controllers";
+			path = RelicGenerator;
+			sourceTree = "<group>";
+		};
+		7B825C1F1C34A15C00BFBF6E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7B825C111C34A15300BFBF6E /* Icon-40@2x.png */,
+				7B825C121C34A15300BFBF6E /* Icon-40@3x.png */,
+				7B825C131C34A15300BFBF6E /* Icon-60@2x.png */,
+				7B825C141C34A15300BFBF6E /* Icon-60@3x.png */,
+				7B825C151C34A15300BFBF6E /* Icon-Small@2x.png */,
+				7B825C161C34A15300BFBF6E /* Icon-Small@3x.png */,
+				7B825C171C34A15300BFBF6E /* Icons.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		7BB2EA231C2473FA009BFDDA = {
 			isa = PBXGroup;
 			children = (
+				7B825BD41C2D233600BFBF6E /* CoreData */,
+				7B825BF71C2DC23300BFBF6E /* View Controllers */,
 				7BB2EA2E1C2473FA009BFDDA /* RelicGenerator */,
 				7BB2EA461C2473FB009BFDDA /* RelicGeneratorTests */,
 				7BB2EA511C2473FB009BFDDA /* RelicGeneratorUITests */,
 				7BB2EA2D1C2473FA009BFDDA /* Products */,
+				7B825C1F1C34A15C00BFBF6E /* Images */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +201,20 @@
 		7BB2EA2E1C2473FA009BFDDA /* RelicGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				7B825BEB1C2DAE8E00BFBF6E /* RelicManager.swift */,
+				7B825BCE1C2D228900BFBF6E /* SpellManager.swift */,
+				7B825C261C34D66000BFBF6E /* ScrollManager.swift */,
+				7B2B4E7C1C4C7E3B0051554B /* ScrollObject.swift */,
+				7B825C221C34BBB300BFBF6E /* RelicStyleKit.swift */,
+				7B825BDD1C2DAC7700BFBF6E /* ObjectGenerator.swift */,
+				7B825C241C34C0E400BFBF6E /* RelicIconManager.swift */,
 				7BB2EA2F1C2473FA009BFDDA /* AppDelegate.swift */,
-				7BB2EA311C2473FA009BFDDA /* ViewController.swift */,
+				7B825BDB1C2D26B700BFBF6E /* Extensions.swift */,
 				7BB2EA331C2473FA009BFDDA /* Main.storyboard */,
+				7B2B4E451C4B12100051554B /* TabBarController.swift */,
+				7B825C201C34A1B500BFBF6E /* LaunchScreen.storyboard */,
 				7BB2EA391C2473FA009BFDDA /* Assets.xcassets */,
-				7BB2EA3B1C2473FA009BFDDA /* LaunchScreen.storyboard */,
 				7BB2EA3E1C2473FA009BFDDA /* Info.plist */,
-				7BB2EA361C2473FA009BFDDA /* RelicGenerator.xcdatamodeld */,
 			);
 			path = RelicGenerator;
 			sourceTree = "<group>";
@@ -196,6 +305,7 @@
 				TargetAttributes = {
 					7BB2EA2B1C2473FA009BFDDA = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 753UQ7TNXJ;
 					};
 					7BB2EA421C2473FB009BFDDA = {
 						CreatedOnToolsVersion = 7.2;
@@ -232,9 +342,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BB2EA3D1C2473FA009BFDDA /* LaunchScreen.storyboard in Resources */,
+				7B825C1B1C34A15300BFBF6E /* Icon-60@3x.png in Resources */,
 				7BB2EA3A1C2473FA009BFDDA /* Assets.xcassets in Resources */,
+				7B825C1C1C34A15300BFBF6E /* Icon-Small@2x.png in Resources */,
 				7BB2EA351C2473FA009BFDDA /* Main.storyboard in Resources */,
+				7B825C1A1C34A15300BFBF6E /* Icon-60@2x.png in Resources */,
+				7B825BDA1C2D25EE00BFBF6E /* spells.plist in Resources */,
+				7B825C191C34A15300BFBF6E /* Icon-40@3x.png in Resources */,
+				7B825C1D1C34A15300BFBF6E /* Icon-Small@3x.png in Resources */,
+				7B825C181C34A15300BFBF6E /* Icon-40@2x.png in Resources */,
+				7B825C211C34A1B500BFBF6E /* LaunchScreen.storyboard in Resources */,
+				7B825C1E1C34A15300BFBF6E /* Icons.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +377,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B825C251C34C0E400BFBF6E /* RelicIconManager.swift in Sources */,
+				7B825C0E1C30590B00BFBF6E /* Spell.swift in Sources */,
+				7B825BCF1C2D228900BFBF6E /* SpellManager.swift in Sources */,
+				7B825C291C3905AB00BFBF6E /* ScrollViewController.swift in Sources */,
+				7B825BF61C2DC1ED00BFBF6E /* ListRelicsViewController.swift in Sources */,
+				7B825BEC1C2DAE8E00BFBF6E /* RelicManager.swift in Sources */,
+				7B2B4E461C4B12100051554B /* TabBarController.swift in Sources */,
+				7B2B4E7D1C4C7E3B0051554B /* ScrollObject.swift in Sources */,
+				7B825C271C34D66000BFBF6E /* ScrollManager.swift in Sources */,
+				7B825C0D1C30590B00BFBF6E /* Spell+CoreDataProperties.swift in Sources */,
+				7B825C231C34BBB300BFBF6E /* RelicStyleKit.swift in Sources */,
+				7B825C0F1C30590B00BFBF6E /* Relic+CoreDataProperties.swift in Sources */,
+				7B2B4E771C4B7A520051554B /* Scroll.swift in Sources */,
 				7BB2EA321C2473FA009BFDDA /* ViewController.swift in Sources */,
+				7B2B4E761C4B7A520051554B /* Scroll+CoreDataProperties.swift in Sources */,
 				7BB2EA381C2473FA009BFDDA /* RelicGenerator.xcdatamodeld in Sources */,
+				7B2B4E741C4B7A520051554B /* ScrollSpell+CoreDataProperties.swift in Sources */,
 				7BB2EA301C2473FA009BFDDA /* AppDelegate.swift in Sources */,
+				7B825C101C30590B00BFBF6E /* Relic.swift in Sources */,
+				7B825BDE1C2DAC7700BFBF6E /* ObjectGenerator.swift in Sources */,
+				7B2B4E751C4B7A520051554B /* ScrollSpell.swift in Sources */,
+				7B825BDC1C2D26B700BFBF6E /* Extensions.swift in Sources */,
+				7B2B4E791C4C16490051554B /* ListScrollsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,14 +441,6 @@
 				7BB2EA341C2473FA009BFDDA /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7BB2EA3B1C2473FA009BFDDA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7BB2EA3C1C2473FA009BFDDA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -401,10 +531,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RelicGenerator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.webdevils.RelicGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +546,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RelicGenerator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.webdevils.RelicGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -486,6 +624,7 @@
 				7BB2EA591C2473FB009BFDDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BB2EA5A1C2473FB009BFDDA /* Build configuration list for PBXNativeTarget "RelicGeneratorTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +633,7 @@
 				7BB2EA5C1C2473FB009BFDDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BB2EA5D1C2473FB009BFDDA /* Build configuration list for PBXNativeTarget "RelicGeneratorUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +642,7 @@
 				7BB2EA5F1C2473FB009BFDDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -512,7 +653,8 @@
 				7BB2EA371C2473FA009BFDDA /* RelicGenerator.xcdatamodel */,
 			);
 			currentVersion = 7BB2EA371C2473FA009BFDDA /* RelicGenerator.xcdatamodel */;
-			path = RelicGenerator.xcdatamodeld;
+			name = RelicGenerator.xcdatamodeld;
+			path = RelicGenerator/RelicGenerator.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
