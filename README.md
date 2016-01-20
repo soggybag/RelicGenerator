@@ -10,3 +10,5 @@ You can download the app [here](https://itunes.apple.com/us/app/relic-generator/
 #Features
 Besides generating a random Relic with a random description, features, and spell effect, the Relic Generator can also 
 send the Relic via Email or as text message. 
+
+![startup screen](https://github.com/soggybag/RelicGenerator/blob/master/Icons.png)
