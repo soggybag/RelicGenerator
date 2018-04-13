@@ -10,16 +10,6 @@ import UIKit
 
 class ListScrollsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     // MARK: TableView DataSource
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

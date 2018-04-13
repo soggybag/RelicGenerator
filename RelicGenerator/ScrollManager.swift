@@ -30,7 +30,7 @@ class ScrollManager {
     // MARK:
     
     func selectScrollAtIndex(index: Int) {
-        selectedScroll = scrollAtIndex(index)
+      selectedScroll = scrollAtIndex(index: index)
     }
     
     
@@ -42,7 +42,7 @@ class ScrollManager {
     }
     
     func getARandomScroll() -> ScrollObject {
-        return scrollAtIndex(Int.randomRange(count))
+      return scrollAtIndex(index: Int.randomRange(range: count))
     }
     
     
@@ -52,13 +52,13 @@ class ScrollManager {
     
     // Generate a ScrollSpell - a spell including caster level bonues etc.
     func generateScrollSpell() -> ScrollSpell {
-        let scrollSpell = NSEntityDescription.insertNewObjectForEntityForName("ScrollSpell", inManagedObjectContext: context) as! ScrollSpell
+      let scrollSpell = NSEntityDescription.insertNewObject(forEntityName: "ScrollSpell", into: context) as! ScrollSpell
         let spell = SpellManager.sharedInstance.getRandomSpellWeightedForLevel()
         
         scrollSpell.spellEffect = spell
-        scrollSpell.cost = SpellManager.sharedInstance.getCostForSpellLevel(spell.level)
-        scrollSpell.casterLevel = RelicManager.sharedInstance.getCasterLevel(spell.level)
-        scrollSpell.casterBonus = RelicManager.sharedInstance.randomRange(Int(scrollSpell.casterLevel))
+      scrollSpell.cost = SpellManager.sharedInstance.getCostForSpellLevel(level: spell.level)
+      scrollSpell.casterLevel = RelicManager.sharedInstance.getCasterLevel(spellLevel: spell.level)
+      scrollSpell.casterBonus = RelicManager.sharedInstance.randomRange(range: Int(scrollSpell.casterLevel))
         
         saveContext()
         
@@ -67,7 +67,7 @@ class ScrollManager {
     
     // Generate a new scroll -
     func generateNewScroll(numberofSpells: Int) -> Scroll {
-        let scroll = NSEntityDescription.insertNewObjectForEntityForName("Scroll", inManagedObjectContext: context) as! Scroll
+      let scroll = NSEntityDescription.insertNewObject(forEntityName: "Scroll", into: context) as! Scroll
         // print("*********** Adding spells to scroll")
         for _ in 1...numberofSpells {
             let scrollSpell = generateScrollSpell()
@@ -82,9 +82,9 @@ class ScrollManager {
     
     func getScrolls() -> [Scroll] {
         var scrolls = [Scroll]()
-        let request = NSFetchRequest(entityName: "Scroll")
+      let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Scroll")
         do {
-            let results = try context.executeFetchRequest(request)
+          let results = try context.fetch(request)
             scrolls = results as! [Scroll]
         } catch let error as NSError {
             print("Error fetching Scrolls \(error); \(error.userInfo)")
@@ -97,11 +97,11 @@ class ScrollManager {
     func getSpellsForScroll(scroll: Scroll) -> [ScrollSpell] {
         // print(">> getSpellsForScroll")
         var spells = [ScrollSpell]()
-        let request = NSFetchRequest(entityName: "ScrollSpell")
+      let request = NSFetchRequest<NSFetchRequestResult>(entityName: "ScrollSpell")
         request.predicate = NSPredicate(format: "scroll == %@", argumentArray: [scroll])
         
         do {
-            let results = try context.executeFetchRequest(request)
+          let results = try context.fetch(request)
             spells = results as! [ScrollSpell]
         } catch let error as NSError {
             print("Error fetch Scroll Spells \(error); \(error.userInfo)")
@@ -126,17 +126,17 @@ class ScrollManager {
     // Make a scroll Object for each scroll in array
     func makeScrollObjects(scrolls: [Scroll]) {
         for scroll in scrolls {
-            self.scrolls.append(ScrollObject(scroll: scroll, spells: getSpellsForScroll(scroll)))
+          self.scrolls.append(ScrollObject(scroll: scroll, spells: getSpellsForScroll(scroll: scroll)))
         }
     }
     
     
     
     func loadScrolls() {
-        let request = NSFetchRequest(entityName: "Scroll")
+      let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Scroll")
         do {
-            let results = try context.executeFetchRequest(request)
-            makeScrollObjects(results as! [Scroll])
+          let results = try context.fetch(request)
+          makeScrollObjects(scrolls: results as! [Scroll])
         } catch let error as NSError {
             print("Load Scrolls Error: \(error); \(error.userInfo)")
         }
@@ -146,8 +146,8 @@ class ScrollManager {
     func generateDefaultScrolls() {
         // Run this function once if there are no scrolls
         for _ in 1...100 {
-            let numberOfSpells = Int.randomRange(6) + 1
-            generateNewScroll(numberOfSpells)
+          let numberOfSpells = Int.randomRange(range: 6) + 1
+          generateNewScroll(numberofSpells: numberOfSpells)
         }
         // Since we just generated the default scrolls load them up
         loadScrolls()
@@ -157,7 +157,7 @@ class ScrollManager {
     
     
     init() {
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+      let appDelegate = UIApplication.shared.delegate as! AppDelegate
         context = appDelegate.managedObjectContext
         
         // Load Scrolls from core data

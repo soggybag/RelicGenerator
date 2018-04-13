@@ -54,7 +54,7 @@ struct ScrollObject {
         str += "Number of Spells: \(spells.count)"
         str += "Levels: \(getSpellLevels())\n"
         for scrollSpell in spells {
-            str += getDescriptionForSpell(scrollSpell)
+          str += getDescriptionForSpell(scrollSpell: scrollSpell)
         }
         return str
     }

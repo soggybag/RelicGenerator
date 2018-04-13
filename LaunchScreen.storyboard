@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,27 +18,27 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icons.png" translatesAutoresizingMaskIntoConstraints="NO" id="onD-tg-DaW">
-                                <rect key="frame" x="191" y="168" width="218" height="264"/>
+                                <rect key="frame" x="78.5" y="201.5" width="218" height="264"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="218" id="o3t-xj-lgD"/>
                                     <constraint firstAttribute="height" constant="264" id="oTd-6o-okl"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RELIC GENERATOR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AVd-JB-ExC">
-                                <rect key="frame" x="191" y="90" width="218" height="47"/>
+                                <rect key="frame" x="78.5" y="123.5" width="218" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="db2-Oa-8Na"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="39"/>
-                                <color key="textColor" red="0.61805791440217384" green="0.61805791440217384" blue="0.61805791440217384" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.61805791440217384" green="0.61805791440217384" blue="0.61805791440217384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="onD-tg-DaW" firstAttribute="top" secondItem="AVd-JB-ExC" secondAttribute="bottom" constant="31" id="BNb-4e-c46"/>
                             <constraint firstItem="onD-tg-DaW" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Dyr-cL-6xq"/>

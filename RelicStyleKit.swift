@@ -42,22 +42,23 @@ public class RelicStyleKit : NSObject {
         //// Group 2
         //// Symbol 2 Drawing
         let symbol2Rect = CGRectMake(group2.minX + floor(group2.width * 0.00000 + 0.5), group2.minY + floor(group2.height * 0.00000 + 0.5), floor(group2.width * 1.00000 + 0.5) - floor(group2.width * 0.00000 + 0.5), floor(group2.height * 1.00000 + 0.5) - floor(group2.height * 0.00000 + 0.5))
-        CGContextSaveGState(context)
+      context!.saveGState()
         UIRectClip(symbol2Rect)
-        CGContextTranslateCTM(context, symbol2Rect.origin.x, symbol2Rect.origin.y)
+      CGContextTranslateCTM(context!, symbol2Rect.origin.x, symbol2Rect.origin.y)
 
         RelicStyleKit.drawIconFrame(frame: CGRectMake(0, 0, symbol2Rect.size.width, symbol2Rect.size.height))
-        CGContextRestoreGState(context)
+      context!.restoreGState()
 
 
         //// Symbol Drawing
         let symbolRect = CGRectMake(group2.minX + floor(group2.width * 0.14286 + 0.5), group2.minY + floor(group2.height * 0.30952 + 0.5), floor(group2.width * 0.85714 + 0.5) - floor(group2.width * 0.14286 + 0.5), floor(group2.height * 0.69048 + 0.5) - floor(group2.height * 0.30952 + 0.5))
-        CGContextSaveGState(context)
+      context!.saveGState()
         UIRectClip(symbolRect)
-        CGContextTranslateCTM(context, symbolRect.origin.x, symbolRect.origin.y)
-
+      CGContextTranslateCTM(context!, symbolRect.origin.x, symbolRect.origin.y)
+      // CGContext.translateBy(<#T##CGContext#>)
+      
         RelicStyleKit.drawCanvas30(frame: CGRectMake(0, 0, symbolRect.size.width, symbolRect.size.height))
-        CGContextRestoreGState(context)
+      CGContextRestoreGState(context!)
     }
 
     public class func drawCanvas2(frame frame: CGRect = CGRectMake(0, 0, 42, 42)) {
@@ -72,22 +73,23 @@ public class RelicStyleKit : NSObject {
         //// Group
         //// Symbol 2 Drawing
         let symbol2Rect = CGRectMake(group.minX + floor(group.width * 0.00000 + 0.5), group.minY + floor(group.height * 0.00000 + 0.5), floor(group.width * 1.00000 + 0.5) - floor(group.width * 0.00000 + 0.5), floor(group.height * 1.00000 + 0.5) - floor(group.height * 0.00000 + 0.5))
-        CGContextSaveGState(context)
+      context!.saveGState()
         UIRectClip(symbol2Rect)
-        CGContextTranslateCTM(context, symbol2Rect.origin.x, symbol2Rect.origin.y)
+      CGContextTranslateCTM(context!, symbol2Rect.origin.x, symbol2Rect.origin.y)
 
         RelicStyleKit.drawIconFrame(frame: CGRectMake(0, 0, symbol2Rect.size.width, symbol2Rect.size.height))
-        CGContextRestoreGState(context)
+      CGContextRestoreGState(context!)
 
 
         //// Symbol Drawing
         let symbolRect = CGRectMake(group.minX + floor(group.width * 0.19048 + 0.5), group.minY + floor(group.height * 0.21429 + 0.5), floor(group.width * 0.78571 + 0.5) - floor(group.width * 0.19048 + 0.5), floor(group.height * 0.78571 + 0.5) - floor(group.height * 0.21429 + 0.5))
-        CGContextSaveGState(context)
+      context!.saveGState()
         UIRectClip(symbolRect)
-        CGContextTranslateCTM(context, symbolRect.origin.x, symbolRect.origin.y)
+      CGContextTranslateCTM(context!, symbolRect.origin.x, symbolRect.origin.y)
+      // CGContext.translateBy(<#T##CGContext#>)
 
         RelicStyleKit.drawCanvas31(frame: CGRectMake(0, 0, symbolRect.size.width, symbolRect.size.height))
-        CGContextRestoreGState(context)
+      CGContextRestoreGState(context!)
     }
 
     public class func drawCanvas3(frame frame: CGRect = CGRectMake(0, 0, 42, 42)) {
@@ -102,9 +104,9 @@ public class RelicStyleKit : NSObject {
         //// Group
         //// Symbol 2 Drawing
         let symbol2Rect = CGRectMake(group.minX + floor(group.width * 0.00000 + 0.5), group.minY + floor(group.height * 0.00000 + 0.5), floor(group.width * 1.00000 + 0.5) - floor(group.width * 0.00000 + 0.5), floor(group.height * 1.00000 + 0.5) - floor(group.height * 0.00000 + 0.5))
-        CGContextSaveGState(context)
+      context!.saveGState()
         UIRectClip(symbol2Rect)
-        CGContextTranslateCTM(context, symbol2Rect.origin.x, symbol2Rect.origin.y)
+      CGContextTranslateCTM(context!, symbol2Rect.origin.x, symbol2Rect.origin.y)
 
         RelicStyleKit.drawIconFrame(frame: CGRectMake(0, 0, symbol2Rect.size.width, symbol2Rect.size.height))
         CGContextRestoreGState(context)
