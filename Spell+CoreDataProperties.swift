@@ -13,12 +13,10 @@ import Foundation
 import CoreData
 
 extension Spell {
-
     @NSManaged var name: String?
     @NSManaged var pagePHBManaged: Int32
     @NSManaged var levelManaged: Int32
     @NSManaged var hasDC: Bool
     @NSManaged var hasAttack: Bool
     @NSManaged var castAtHigherLevel: Bool
-
 }
